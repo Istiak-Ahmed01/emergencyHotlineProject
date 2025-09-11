@@ -14,6 +14,17 @@ document.querySelectorAll(".cardBtn").forEach((btn) => {
         const serviceNumber = card.querySelector(".serviceNumber").innerText
         alert(`📞 Calling ${serviceName} ${serviceNumber}...`)
 
+        // coins
+    const coins = document.getElementById("coins")
+    const currCoins = parseInt(coins.innerHTML)
+    const totalCoins = parseInt(currCoins - 20)
+    if(totalCoins >= 0){
+    coins.innerHTML = totalCoins
+
+    }else{
+        alert(`❌আপনার পর্যাপ্ত কয়েন নেই, কল করতে কমপক্ষে 20 কয়েন লাগবে।`)
+    }
+
     })
 
 })
