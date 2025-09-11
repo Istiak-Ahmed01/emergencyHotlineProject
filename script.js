@@ -44,3 +44,15 @@ document.querySelectorAll(".cardBtn").forEach((btn) => {
     })
 
 })
+
+const resetCallHistory = () => {
+    const callHistory = document.getElementById("carHistory")
+    callHistory.innerHTML = ""
+}
+
+const copyNumber = () => {
+    const copy = document.getElementById("copyNumber")
+    const currCopy = parseInt(copy.innerText)
+    const totalcopy = currCopy + 1
+    copy.innerHTML = `${totalcopy} Copy`
+}
