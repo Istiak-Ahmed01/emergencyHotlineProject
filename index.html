@@ -40,7 +40,7 @@
         <div class="flex flex-col md:flex-row items-center gap-5 h-12">
             <div
                 class=" hidden md:flex  justify-center items-center h-12 w-32 gap-3 px-9 py-3 bg-[#41FF6B10] rounded-full">
-                <p>0</p>
+                <p id="favNumber">0</p>
                 <img class="h-full" src="./assets/heart.png" alt="">
             </div>
             <div
@@ -70,7 +70,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()" class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -98,7 +98,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/police.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()" class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -126,7 +126,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/fire-service.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()" class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -154,7 +154,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/ambulance.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -182,7 +182,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -210,7 +210,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -238,7 +238,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -266,7 +266,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/brac.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -294,7 +294,7 @@
                 <div class=" bg-white p-8 space-y-5  h-[360px] rounded-xl shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] h-[60px]" src="./assets/Bangladesh-Railway.png" alt="">
-                        <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-heart text-[#5C5C5C]"></i>
                     </div>
 
                     <div>
@@ -328,7 +328,7 @@
             <div class="w-[400px] bg-white shadow-[0px 2px 3px 0px rgba(0, 0, 0, 0.15)] p-6 ">
                 <div class="flex justify-between items-center">
                     <div class="flex gap-2 justify-center items-center mt-4">
-                        <i class="fa-regular fa-clock"></i>
+                        <i onclick="addFavNumber()"  class="fa-regular fa-clock"></i>
                         <h3 class="roboto text-[20px] font-medium">Call History</h3>
                     </div>
                     <button class="h-12 w-28  px-9 py-3 bg-[#00A63E] text-white rounded-full text-center">Clear</button>
