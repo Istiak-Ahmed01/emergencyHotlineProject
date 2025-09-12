@@ -12,6 +12,7 @@ document.querySelectorAll(".cardBtn").forEach((btn) => {
         const card = btn.closest(".card")
         const serviceName = card.querySelector(".serviceName").innerText
         const serviceNumber = card.querySelector(".serviceNumber").innerText
+        const currentTime = new Date().toLocaleTimeString()
 
         // coins
         const coins = document.getElementById("coins")
@@ -32,7 +33,7 @@ document.querySelectorAll(".cardBtn").forEach((btn) => {
                         <h3 class="text-lg font-semibold">${serviceName}</h3>
                         <p class="hind text-lg font-normal text-[#5C5C5C]">${serviceNumber}</p>
                     </div>
-                    <p class="hind text-lg font-normal ">11:36:58 AM</p>
+                    <p class="hind text-lg font-normal ">${currentTime}</p>
                     </div>`
             callHistory.appendChild(newHistory)
 
@@ -50,9 +51,24 @@ const resetCallHistory = () => {
     callHistory.innerHTML = ""
 }
 
-const copyNumber = () => {
-    const copy = document.getElementById("copyNumber")
-    const currCopy = parseInt(copy.innerText)
-    const totalcopy = currCopy + 1
-    copy.innerHTML = `${totalcopy} Copy`
+
+
+document.querySelectorAll(".copyBtn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const card = btn.closest(".card")
+        const serviceNumber = card.querySelector(".serviceNumber").innerText
+
+        alert(`The number ${serviceNumber} has been copied`)
+        const copy = document.getElementById("copyNumber")
+        const currCopy = parseInt(copy.innerText)
+        const totalCopy = currCopy + 1
+        copy.innerHTML = `${totalCopy} Copy`
+
+    })
+})
+
+const getCurrentTime = () => {
+    const now = new Date()
+    const time = now.toLocaleTimeString()
+    console.log(time)
 }
