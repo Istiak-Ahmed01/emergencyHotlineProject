@@ -57,6 +57,7 @@ document.querySelectorAll(".copyBtn").forEach((btn) => {
     btn.addEventListener("click", () => {
         const card = btn.closest(".card")
         const serviceNumber = card.querySelector(".serviceNumber").innerText
+        navigator.clipboard.writeText(serviceNumber)
 
         alert(`The number ${serviceNumber} has been copied`)
         const copy = document.getElementById("copyNumber")
@@ -67,8 +68,3 @@ document.querySelectorAll(".copyBtn").forEach((btn) => {
     })
 })
 
-const getCurrentTime = () => {
-    const now = new Date()
-    const time = now.toLocaleTimeString()
-    console.log(time)
-}
